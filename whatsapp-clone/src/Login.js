@@ -6,7 +6,7 @@ import {useStateValue} from "./StateProvider";
 import {actionTypes} from "./reducer";
 
 function Login(){
-    const [{ user }, dispatch] = useStateValue();
+    const [{} , dispatch] = useStateValue();
 
     const signIn = () => {
         auth.signInWithPopup(provider).then(result => {
