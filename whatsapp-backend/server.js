@@ -30,6 +30,7 @@ app.use(express.json())
 
 //db config
 const connection_url = 'mongodb+srv://admin:3sudCjwxCfwH8Fg@cluster0.aykf3.mongodb.net/whatsappdb?retryWrites=true&w=majority'
+/*const connection_url = 'mongodb+srv://admin:3sudCjwxCfwH8Fg@cluster0.aykf3.mongodb.net/whatsappdb?retryWrites=true&w=majority'*/
 mongoose.connect(connection_url, {
     useCreateIndex: true,
     useNewUrlParser: true,
