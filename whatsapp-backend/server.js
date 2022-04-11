@@ -10,10 +10,10 @@ const app = express()
 const port = process.env.PORT || 9000
 
 const pusher = new Pusher({
-    appId: "1233979",
-    key: "626666ad3d5af48325d2",
-    secret: "98fb2b7949bf71e4e602",
-    cluster: "ap2",
+    appId: "",
+    key: "",
+    secret: "",
+    cluster: "",
     useTLS: true
 });
 
@@ -29,8 +29,7 @@ app.use(express.json())
 }) //this allows the request to come from any endpoint
 
 //db config
-const connection_url = 'mongodb+srv://admin:3sudCjwxCfwH8Fg@cluster0.aykf3.mongodb.net/whatsappdb?retryWrites=true&w=majority'
-/*const connection_url = 'mongodb+srv://admin:3sudCjwxCfwH8Fg@cluster0.aykf3.mongodb.net/whatsappdb?retryWrites=true&w=majority'*/
+const connection_url = ''
 mongoose.connect(connection_url, {
     useCreateIndex: true,
     useNewUrlParser: true,
